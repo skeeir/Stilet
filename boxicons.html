@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+    .figure {
+        position: relative;
+        width: 90px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+      }
+      td{
+        padding: 3px 30px;
+        height: 30px;
+        width: 180px;
+        border-radius: 25px;  
+        background-color: #0689db;
+        
+      }
+      .figure #hovee .Sirv.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .2s;
+
+      }
+
+
+      #hovee:hover .Sirv.image-hover {
+        padding: 3px 30px;
+        height: 30px;
+        width: 80px;
+        border-radius: 25px; 
+        margin-top: 2px;
+        opacity: 1;
+        background-color:#4ea7f4;
+      }
+
+      .btn a{
+        color: rgb(215, 215, 118);
+      }
+      .active, .btn:hover{
+        background-color: #4ea7f4;
+        color: white;
+        cursor: pointer;
+      }
+      
+      </style>
+</head>
+<body>
+<div class="figure">
+    <table>
+    <td id="hovee"><box-icon name='home-alt-2' class="Sirv image-main" color="#63bbf3"></box-icon>
+   <a href=""><box-icon name='home-alt-2' type="solid" animation='tada' rotate='180' class="Sirv image-hover" color="blue"></box-icon></a>
+</td>
+<td class="btn active"> <a href="">1</a></th>
+<td class="btn"><a href="">2</a></td>
+<td class="btn"><a href="">3</a></td>
+<td class="btn" ><a href="">4</a></td>
+</table>
+</div>
+   
+
+<script>
+    import 'boxicons';
+
+    
+</script>
+</body>
+</html>

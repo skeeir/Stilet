@@ -1,0 +1,496 @@
+body{
+    background-color: #0072bb;
+    background-image: url(littlelogos.png);
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.ans{
+    border: 3px solid #13aced;
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 519px;
+    text-align: center;
+    height: fit-content;
+    color: rgb(245, 255, 176);
+    background-color: rgb(49, 126, 251);
+    box-shadow: 0px 10px rgb(156, 207, 255);
+    cursor: cell;
+    font-size: 18px;
+    display: block;
+    padding: 15px 0px 10;
+}
+.Q1{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+
+.Q2{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+
+.Q3{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q4{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q5{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q6{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q7{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q8{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q9{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.Q10{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.qts1{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts2{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts3{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts4{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts5{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts6{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts7{  
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts8{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts9{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.qts10{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    text-align: center;
+    color: rgb(144, 232, 247);
+    font-size: 20px;
+    font: sans-serif;
+    width: fit-content;
+    margin-top: 1px;
+    margin-right: 50px;
+    height: fit-content;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+.h{
+    padding: 4px;
+    font-size: 12px;
+    border: 3px solid limegreen;
+    margin-top: 150px;
+    border-radius: 0px;
+    width: 90px;
+    text-align: center;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    box-shadow: 0px 10px gray;
+    cursor: cell;
+    display: block;
+    margin-left: 255px;
+    text-decoration: none;
+}
+
+.home{
+    text-align: center;
+    margin-top: 90px;
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+   border-radius: 5px;
+   color: #0072bb;
+    border: 5px solid rgb(255, 208, 68);
+    visibility: hidden;
+    
+}
+
+
+.cell1{
+    position: fixed;
+    margin-top: 90px;
+    background-color: rgb(255, 255, 248);
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    bottom: 100px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);
+
+}
+
+.cell2{
+    position: fixed;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: -390px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    top: 537px;
+    border: 5px solid rgb(255, 208, 68);
+    visibility: hidden;
+    
+}
+
+.cell3{
+    position: fixed;
+    bottom: 100px;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    border: 5px solid rgb(255, 208, 68);
+    
+}
+
+.cell4{
+    position: fixed;
+    bottom: 100px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);
+    
+}
+
+.cell5{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    bottom: 100px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);
+    
+}
+
+.cell6{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    bottom: 100px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);
+    
+}
+
+.cell7{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    bottom: 100px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);
+    
+}
+
+.cell8{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    bottom: 100px;
+    visibility: hidden;
+    border: 5px solid rgb(255, 208, 68);    
+}
+
+.cell9{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    visibility: hidden;
+    bottom: 100px;
+    border: 5px solid rgb(255, 208, 68);  
+    
+}
+
+.cell10{
+    position: fixed;
+    margin-top: 90px;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    align-items: center;
+    margin-left: 350px;
+    padding: 30px;
+    visibility: hidden;
+    bottom: 100px;
+    border: 5px solid rgb(255, 208, 68);  
+    
+}
+
+
+
+.posq1{
+    margin-top: 20px;
+}
+
+
+.counter2{
+    background-color: rgb(255, 242, 0);
+    border: 3px solid rgb(0, 102, 255);
+    text-align: center;
+    border-radius: 15px;
+    width: 210px;
+    height: 50px;
+    font-size: 32px;
+    color: rgb(13, 127, 226);
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 620px;
+}
+
+
+.ans:hover {background-color: rgb(90, 200, 237);
+    padding: 10px 0px 10px;
+}
+
+.ans:active {
+    color: rgb(255, 242, 53);
+    background-color: rgb(49, 126, 251);
+    box-shadow: 0px 10px rgb(156, 207, 255);
+  transform: translateY(4px);
+}
+
+.next:hover {background-color:#f8f557;
+    color: #5dc9f0;}
+
+.next:active {
+    color: #5dc9f0;
+    background-color: #f6f365;
+    box-shadow: 0px 5px rgba(180, 237, 81, 0.397);
+  transform: translateY(4px);
+}
+
+.h:hover {background-color: #79fdfd}
+
+.h:active {
+  background-color: #6caef0;
+  box-shadow: 0 5px #85c6ee;
+  transform: translateY(4px);
+}
+
+
+
+.next{
+    background-color: rgb(60, 148, 225);
+    border: 3px solid rgb(98, 211, 255);
+    margin-top: 65px;
+    margin-left: 450px;
+    border-radius: 0px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    color: rgb(223, 243, 171);
+    border-radius: 5px;
+    box-shadow: 0px 10px rgba(92, 165, 255, 0.397);
+    cursor: pointer;
+    display: block;
+}

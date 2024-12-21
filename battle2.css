@@ -1,0 +1,498 @@
+body{
+overflow: hidden;
+background-color: #0072bb;
+background-image: url(littlelogos.png);
+}
+
+h1{
+text-align: center;
+margin: 20px;
+
+}
+
+.questions{
+   margin-top: 10px;
+   font-size: 24px;
+   text-align: center;
+   color: rgb(224, 16, 16);
+   background-color: #ebff6c;
+   border-radius: 15px;
+}
+
+.mcsprite1{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite2{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite3{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite4{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite5{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite6{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite7{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite8{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite9{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.mcsprite10{
+    position: relative;
+right: 165px;
+    background-color: transparent;
+    bottom: 290px;
+    width: 270px;
+    height: 350px;
+}
+
+.health-bar-container{
+position: relative;
+z-index: 12;
+left:460px;
+top: 50px;
+}
+
+.box1{
+position: relative;
+z-index: 2;
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: -80px;
+visibility: hidden;
+border: 10px solid purple;
+background-color:rgb(247, 255, 245);
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+
+}
+
+.box2{
+position: relative;
+z-index: 3;
+border: 10px solid orangered;
+height: 500px;
+width: 550px;
+margin-left: 400px;
+background-color: white;
+bottom: 442px;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+visibility: hidden;
+}
+
+.box3{
+position: relative;
+z-index: 4;
+height: 500px;
+width: 550px;
+margin-left: 400px;
+border: 10px solid orange;
+background-color:rgb(247, 255, 245);
+bottom: 965px;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+visibility: hidden;
+}
+
+.box4{
+position: relative;
+z-index: 5;
+border: 10px solid yellowgreen;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 1487px;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+visibility: hidden;
+
+}
+
+.box5{
+position: relative;
+z-index: 6;
+border: 10px solid gold;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 2009px;
+visibility: hidden;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+
+}
+
+
+.box6{
+position: relative;
+z-index: 7;
+border: 10px solid black;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 2531px;
+visibility: hidden;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+
+}
+
+
+.box7{
+position: relative;
+z-index: 8;
+border: 10px solid pink;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 3053px;
+visibility: hidden;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+
+}
+
+
+.box8{
+position: relative;
+z-index: 9;
+border: 10px solid brown;
+background-color:rgb(247, 255, 245);
+height:500px;
+width: 550px;
+margin-left: 400px;
+bottom: 3575px;
+background: url('01pmote.png');
+background-color: white;
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+visibility: hidden;
+}
+
+
+.box9{
+position: relative;
+z-index: 10;
+border: 10px solid green;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 4097px;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+visibility: hidden;
+}
+
+.box10{
+position: relative;
+z-index: 11;
+border: 10px solid blue;
+background-color:rgb(247, 255, 245);
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom: 4619px;
+background: url('01pmote.png');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 530px;
+padding: 1px 0px;
+
+
+}
+
+.box11{
+position: relative;
+z-index: 1;
+border: 10px solid red;
+height: 500px;
+width: 550px;
+margin-left: 400px;
+bottom:442px;
+background-color:rgb(146, 131, 241);
+color: white;
+visibility: hidden;
+color: black;
+
+background: url('conpeti.gif');
+background-position: center;
+background-position-y: 5px;
+background-repeat: no-repeat;
+background-size: 1530px;
+padding: 1px 0px;
+
+
+}
+
+
+
+.b1{
+
+
+    margin-top: 180px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b2{
+
+    margin-top: 236px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+
+}
+
+.b3{
+
+
+margin-top: 265px;
+border: 2px solid blue;
+margin-right: 30px;
+margin-left: 30px;
+width: fit-content;
+
+}
+
+.b4{
+
+    margin-top: 237px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+    
+
+}
+
+.b5{
+
+
+    margin-top: 237px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b6{
+
+
+    margin-top: 237px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b7{
+
+
+    margin-top: 237px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b8{
+
+    margin-top: 237px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b9{
+
+
+    margin-top: 210px;
+    border: 2px solid blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+
+}
+
+.b10{
+
+margin-top: 210px;
+border: 2px solid blue;
+margin-right: 30px;
+margin-left: 30px;
+width: fit-content;
+
+}
+
+button {
+
+background-color: blue;
+color: white;
+width: 231px;
+height: 55px;
+
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 10px;
+margin: 5px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+button:hover {
+background-color: rgb(0, 191, 255);
+}
+
+.health-bar-container{
+margin-top: 20px;
+margin-left: 75px;
+width: 300px;
+height: 20px;
+background-color: #f1b1b1;
+border-radius: 10px;
+overflow: hidden;
+border: 2px solid #2c1f1f;
+
+}
+
+.health-bar { 
+height: 100%;
+width: 100%; 
+
+background: #ff0000;
+transition: width 0.3s ease;
+} 
+
+.health-bar-container.fadeInBottom{
+animation-duration: 5s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+
+@keyframes fadeInBottom {
+100% {
+    opacity: 1;
+    transform: translateY(100%);
+}
+0% {
+    opacity: 0;
+    transform: translateY(0);
+}
+}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+  
+}
+@font-face {
+    font-family: 'Qaroxe-zrllw';
+    src: url(Qaroxe-zrllw.ttf);
+  }
+body {
+  font-family: 'Qaroxe-zrllw';
+    background-color:#0072bb;
+    background-image: url(littlelogos.png);
+    background-position: center;
+    
+    }
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.headerr{
+    width: 150px;
+    height: 50px;
+    margin-right: 350px;
+
+}
+
+.info{
+  color: #0e90e1;
+    
+    text-align: center;
+    font-size:15px;
+    font-family: 'Qaroxe-zrllw', sans-serif;
+}
+
+
+.info:hover{
+    color: rgb(31, 169, 255);
+    cursor: pointer;
+}
+
+.box{
+    background:  #fef200;
+    background-image: url(littlelogos4.png);
+    background-size: 900px;
+    background-position: center;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border:15px solid #00276C;
+    width: 80%;
+    height: fit-content;
+	margin: auto;
+    border-radius: 20px;
+    margin-top: 55px;
+}
+
+.information1{
+  background-color: #fffd74;
+  color: #2281ed;
+    font-size: 18px;
+        font-family: 'Qaroxe-zrllw';
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+.information10{
+  background-color: #fffd74;
+    padding-top: 15px;
+    color: #2281ed;
+    font-family: 'Qaroxe-zrllw';
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    display: none;
+}
+
+.information2 {
+    background-color: #fffd74;
+    color: #0479ff;
+    font-size: 18px;
+    font-family: 'Qaroxe-zrllw';
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+#newinfo{
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    height: 150px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {
+        visibility: visible;
+    opacity: 1;}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}           
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(8, 255, 251, 0.8);
+}
+
+.text {
+  color: #2513e8;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #10339d;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.button{
+    background-color: #0da2ff;
+    width: 90px;
+    border-radius: 5px;
+    height: 25px;
+    margin: auto;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.button:hover, a:hover {
+    background-color: #035b92;
+    color: #009dff;
+    text-decoration: underline;
+}
+
+.active, .dot:hover {
+  background-color: #f6ff50;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.gotoquiz, .button{
+  width: cover;
+  height: 40px;
+  font-family: fantasy;
+  text-align: center;
+  padding-bottom:5px;
+}
+
+.divv1, .emote6{
+  width: 400px;
+    height: 400px;
+    margin-right: 1600px;
+    margin-top: -5px;
+    position: absolute;
+}
+
+.divv2, .emote3{
+  width: 350px;
+    height: 350px;
+    
+    margin-right: 990px;
+    margin-bottom: 400px;
+    position: absolute;
+    
+    
+}
+
+.divv3, .emote5{
+  width: 400px;
+    height: 400px;
+    
+    margin-right: 990px;
+    margin-top: -10px;
+    position: absolute;
+    
+    
+}
+
+.divv4, .emote5_1{
+  width: 400px;
+    height: 400px;
+    
+    margin-right: 990px;
+    margin-top: -10px;
+    position: absolute;
+    
+    
+}
+
+.divv5, .emote4{
+  width: 450px;
+    height: 400px;
+    
+    margin-right: 80px;
+    margin-top: -10px;
+    position: absolute;
+}
+h1{
+  color: #0488da;
+  font-family: 'Qaroxe-zrllw';
+}
+
+.figure {
+        position: relative;
+        width: 90px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+        align-items: center;
+        margin-left: 250px;
+        margin-top: 50px;
+      }
+      td{
+        padding: 3px 30px;
+        height: 30px;
+        width: 140px;
+        border-radius: 25px;  
+        background-color: #ffdf2b;
+        
+      }
+      .figure #hovee .Sirv.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .0s;
+
+      }
+
+
+      #hovee:hover .Sirv.image-hover {
+        padding: 3px 30px;
+        height: 36px;
+        width: 85px;
+        border-radius: 25px; 
+        margin-top: 4px;
+        margin-left: 3px;
+        opacity: 1;
+        background-color: #0fc5f2;
+      }
+
+      td{
+        border: #16286a solid 3px;
+        font-family: 'Qaroxe-zrllw';
+      }
+      .btn a{
+        color: #10156e;
+        text-decoration: none;
+        display: block;
+        padding:5px 10px;
+      }
+       .active,.btn:hover, .btn a:hover{
+        background-color: #0fc5f2;
+        color: rgb(255, 220, 79);
+        cursor: pointer;
+      }
+
+      
+</style>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@lates/dist/boxicons.js"></script>
+</head>
+
+<body>
+  
+  
+<div class="slideshow-container">
+
+  <div class="figure">
+    <table>
+    <td id="hovee"><box-icon name='home-alt-2' class="Sirv image-main" color="#63bbf3"></box-icon>
+   <a href="stlethome.html"><box-icon name='home-alt-2' type="solid" animation='tada' rotate='180' class="Sirv image-hover" color="yellow"></box-icon></a>
+</td>
+<td class="btn active"> <a href="flipbooklet.html">1</a></th>
+<td class="btn"><a href="flipbooklet4.html">2</a></td>
+<td class="btn"><a href="flipbooklet3.html">3</a></td>
+<td class="btn" ><a href="flipbooklet2.html">4</a></td>
+</table>
+</div>
+    
+  
+<div class="mySlides fade">
+
+  <div class="numbertext">1 / 6</div>
+  <div class="divv1">
+    <image src="Emote6.png" class="emote6"></image>
+  </div>
+  <div class="box"> 
+    
+    
+    <h1>Speech Styles</h1>
+    <image src="Speech.png" alt="speech" class="headerr">
+        <p class = "info" onclick="dropdown()">What is a speech? (Click me)</p>
+        <p class = "information10" id="deown">
+            It is a direct communication by delivering our thoughts and ideas to provide
+            knowledgeable message by inserting and proper gestures while considering
+            the purpose and context of the speech to reflect our wisdom about the topic.
+            It helps to convey our emotions better and let other know how we feel about certain topics and understand.
+        </p> 
+        
+        
+        
+</div>  
+</div>
+
+
+</div>
+
+
+<div class="mySlides fade">
+  
+  <div class="numbertext">3 / 6</div>
+  <div class="divv2">
+    <img src="emote3.png" class="emote3">
+        </div>
+  <div class="box"> 
+    
+    
+    
+    
+    <p class="information2">Speech can be formal or informal because it can happen anytime and with any purpose and audience.
+    </p>
+    
+</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <div class="divv3">
+    <image src="Emote5.png" class="emote5"></image>
+  </div>
+  <div class="box"> 
+    <p class="information1">Speeches have many forms and types such as it can be done spontaneously ot be done with ample preparation.
+    </p> 
+    <div class="information2"><p>Speech has a purpose that requires audience. A comapnion is enough or more to persuade, inform, entertain, demonstrate, and or motivate.
+    </p>
+      <p>
+        It is important to know that these five levels of speech styles fall in the following formal and informal categories.
+        Formal – Formal, frozen, consultative
+        Informal  - Intimate, casual
+        </p>
+    </div>
+    
+</div>
+</div>
+
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <div class="divv4">
+      <image src="Emote5.png" class="emote5_1"></image>
+    </div>
+    <div class="box"> 
+      
+      <p class="information1">Speech can not always be done by using our mouth only, it can also be done by using non-verbal or actions to further demonstrate, explain and givee meaning to the audience.
+      </p> 
+      <p class="information2">Speech is a process of sending and recieving spoken messages between people and it is often used by the Speakers as a form of communication to interact with their followers at different events.
+      </p>
+  </div>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <div class="divv5">
+      <image src="Emote.png" class="emote4"></image>
+    </div>
+    <div class="box"> 
+      <p class="information1">
+        Speaking styles require a suitable analysis of the audience and the objective for a message to be effective. 
+      </p> 
+      <p class="information2">Speaking styles have varying degrees of formality based on the objective and the intended audience. Speaking styles fall into five levels of speaking, they are called Language register.
+
+      </p>
+      
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <div class="box"> 
+      <div class="divv3">
+        <image src="Emote5.png" class="emote5"></image>
+      </div>
+      <div class="information1">
+
+<h2>Language Register: </h2>
+      </div> 
+      <div class="information2">Speaking styles have varying degrees of formality based on the objective and the intended audience. Speaking styles fall into five levels of speaking, they are called Language register.
+<p>
+
+  1. Intimate - This language is shared between couples, very close friends. It is reserved for close family members or intimate people.</p>
+
+  <p> 
+    2. Casual - This is the informal language used by peers and friends. Past experience with that person. Slang, vulgarities, and colloquialisms are normal. This is a “group” language. One must be a member to engage in this register.</p>
+  </div>
+    </div>
+    </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <div class="box"> 
+      <div class="divv3">
+        <image src="Emote5.png" class="emote5"></image>
+      </div>
+      <div class="information1">
+        
+<h2>Language Register: </h2>
+      </div> 
+      <div class="information2">
+   <p>   3. Frozen – This style of communication rarely or never changes. It is “frozen” in time and content.</p>
+<p> 4. Formal - This language is used in formal settings and is one-way in nature. This use of language usually follows a commonly accepted format.</p>
+<p>5. Consultative - Users engage in a mutually accepted structure of communication. Two-way communication used in conversation with professional discourse is a good example.
+</p>   
+<div class="button"><a href="STQ2.html" class="gotoquiz">Take the Quiz?</a></div>
+  </div>
+      
+    </div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+
+<script>
+
+
+
+
+function dropdown() {
+    var x = document.getElementById("deown");
+    if (x.style.display == "block"){
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>  

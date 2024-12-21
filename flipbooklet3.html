@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Qaroxe-zrllw';
+    src: url(Qaroxe-zrllw.ttf);
+  }
+  body {
+  font-family: 'Qaroxe-zrllw';
+    background-color:#0072bb;
+    background-image: url(littlelogos.png);
+    background-position: center;
+    
+    }
+
+    h1{
+      font-family: 'Qaroxe-zrllw';
+      color: #0268a7;
+    }
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#info{
+    background-color: rgb(255, 218, 72);
+    border: solid 3px rgb(37, 48, 93);
+    border-radius: 45px;
+    padding: 5px 50px 6px;
+    color: #086fae;
+    font-size:15px;
+    font-family: 'Qaroxe-zrllw';
+}
+
+#info:hover{
+    color: rgb(31, 169, 255);
+}
+
+
+
+.box{
+    background:  #fef200;
+    background-image: url(littlelogos4.png);
+    background-size: 900px;
+    background-position: center;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border:15px solid #00276C;
+    width: 80%;
+    height: fit-content;
+	margin: auto;
+    border-radius: 20px;
+    margin-top: 55px;
+}
+
+
+
+.information10{
+    background-color: #fffd74;
+    padding-top: 15px;
+    color: #2281ed;
+    font-size: 18px;
+    width: 450px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: none;
+    font-family: 'Qaroxe-zrllw';
+}
+
+
+.information1{
+    background-color: #fffd74;
+    color: #2281ed;
+    font-size: 18px;
+    font-family: 'Qaroxe-zrllw';
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding: 25px;
+    border: solid 3px darkblue;
+}
+
+.information2 {
+    background-color: #fffd74;
+    color: #2281ed;
+    font-size: 18px;
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid 3px #00276C;
+}
+
+#newinfo{
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    height: 250px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {
+        visibility: visible;
+    opacity: 1;}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}           
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(8, 255, 251, 0.8);
+}
+
+.text {
+  color: #2513e8;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #10339d;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.button{
+    background-color: #0da2ff;
+    width: fit-content;
+    border-radius: 5px;
+    height: fit-content;
+    margin-left: 130px;
+ 
+}
+.button:hover, a:hover {
+    background-color: #002a9d;
+    color: #20aaff;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #f6ff50;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.box3 {
+  width: 300px;
+  margin-left: 70px;
+  border-radius: 15px;
+  background: #0d55dc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+  font-family: fantasy;
+  margin-bottom: 15px;
+}
+
+
+
+/* speech bubble 13 */
+
+.sb13:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #0d55dc;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #0d55dc;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+
+
+/* speech bubble 14 */
+
+.sb14:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #0d55dc;
+  border-top: 15px solid #0d55dc;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
+
+#infro{
+    width: 350px;
+    position: absolute;
+    right: 26%;
+    bottom: 35.1%;
+    background-color: #ffe032;
+    color: #0082ce;
+}
+
+#aj1{
+    height: 400px;
+    width: 400px;
+    margin-right: 350px;
+    margin-top: 30px;
+}
+
+
+.box1 {
+  width: 350px;
+  margin-bottom: 50px;
+  margin-left: 55px;
+  border: 4px solid #0f3465;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #0f3465;
+  font-family: arial;
+  position: relative;
+}
+
+.box2 {
+  width: 350px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  border: 4px solid #0f3465;
+  border-radius: 50px;
+  font-family: fantasy;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #0f3465;
+  font-family: arial;
+  position: relative;
+}
+
+
+/* speech bubble 5 */
+
+.sb5:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #0f3465;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0f3465;
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+
+.sb5:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ffffff00;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff00;
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: 13px;
+}
+
+
+/* speech bubble 6 */
+.sb6:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid#0f3465;
+  border-top: 10px solid #0f3465;
+  border-bottom: 10px solid transparent;
+  right: 20px;
+  bottom: -23px;
+}
+
+.sb6:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffffff00;
+  border-top: 10px solid #ffffff00;
+  border-bottom: 10px solid transparent;
+  right: 24px;
+  bottom: -13px;
+}
+
+
+
+
+/* speech bubble 7 */
+
+.sb7:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #0f3465;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0f3465;
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+
+.sb7:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ffffff00;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff00;
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: -13px;
+}
+
+
+/* speech bubble 8 */
+
+.sb8:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #0f3465;
+  border-top: 10px solid #0f3465;
+  border-bottom: 10px solid transparent;
+  right: 20px;
+  bottom: -23px;
+}
+
+.sb8:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffffff00;
+  border-top: 10px solid #ffffff00;
+  border-bottom: 10px solid transparent;
+  right: 24px;
+  bottom: -13px;
+}
+
+.sb9:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #0f3465;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0f3465;
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+
+.sb9:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ffffff00;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff00;
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: -13px;
+}
+
+h2{
+    color: #0072bb;
+}
+
+.divv3, .emote5{
+  width: 400px;
+    height: 400px;
+    
+    margin-right: 990px;
+    margin-top: -10px;
+    position: absolute;
+    
+    
+}
+
+.information3{
+    background-color: #fffd74;
+    font-family: fantasy;
+    text-align: center;
+    color: #2281ed;
+    font-size: 18px;
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 12px;
+}
+.divv2, .emote3{
+  width: 380px;
+    height: 380px;
+    
+    margin-right: 500px;
+    margin-bottom: 200px;
+    position: absolute;
+    
+    
+}
+
+.button{
+  text-align: center;
+}
+
+
+
+.figure {
+        position: relative;
+        width: 90px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+        align-items: center;
+        margin-left: 250px;
+        margin-top: 50px;
+      }
+      td{
+        padding: 3px 30px;
+        height: 30px;
+        width: 140px;
+        border-radius: 25px;  
+        background-color: #ffdf2b;
+        
+      }
+      .figure #hovee .Sirv.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .0s;
+
+      }
+
+
+      #hovee:hover .Sirv.image-hover {
+        padding: 3px 30px;
+        height: 50px;
+        width: 88px;
+        border-radius: 25px; 
+        margin-top: 4px;
+        margin-left: 3px;
+        opacity: 1;
+        background-color: #0fc5f2;
+      }
+
+      td{
+        border: #16286a solid 3px;
+        font-family: 'Qaroxe-zrllw';
+      }
+      .btn a{
+        color: #10156e;
+        text-decoration: none;
+        display: block;
+        padding:5px 10px;
+      }
+       .active,.btn:hover, .btn a:hover{
+        background-color: #0fc5f2;
+        color: rgb(255, 220, 79);
+        cursor: pointer;
+      }
+
+</style>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@lates/dist/boxicons.js"></script>
+
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    
+
+  <div class="figure">
+    <table>
+    <td id="hovee"><box-icon name='home-alt-2' class="Sirv image-main" color="#63bbf3"></box-icon>
+   <a href="Index.html"><box-icon name='home-alt-2' type="solid" animation='tada' rotate='180' class="Sirv image-hover" color="yellow"></box-icon></a>
+</td>
+<td class="btn"> <a href="flipbooklet.html">1</a></th>
+<td class="btn"><a href="flipbooklet4.html">2</a></td>
+<td class="btn active"><a href="flipbooklet3.html">3</a></td>
+<td class="btn " ><a href="flipbooklet2.html">4</a></td>
+</table>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <div class="divv3">
+    <image src="Emote5.png" class="emote5"></image>
+  </div>
+  <div class="box"> 
+    <h1>Group Discussions</h1>
+
+    
+    <div class="information2"  id="newinfo">  <p> Group discussions involve individuals working together towards a common goal. To achieve this, the participants require understanding and skills.
+    </p>
+
+   
+</div>  
+
+
+<button id="info" onclick="dropdown()">The two types of group discussions</button>
+<div class = "information10" id="deown">
+
+    <div class="box3 sb13" id="sbox1">Informal Group Discussions</div>
+    <div class="box3 sb14" id="sbox2">Formal Group Discussions</div>
+</div>
+    
+</div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <div class="box"> 
+    
+  
+
+    <img src="01emote.png" alt="aj" id="aj1">
+    <p class="information2" id="infro">
+        Informal group discussions can be done in different places, occasions, and events to find solutions to different problems.
+        (Or maybe it's just another excuse)
+    </p>
+    <br>
+   
+
+
+</div>
+</div>
+
+
+<div class="mySlides fade">
+
+  <div class="numbertext">3 / 6</div>
+  <div class="box">
+  <h2>
+    Facilitator’s Role; Cognitive Factors
+</h2>
+
+<div class="box1 sb5">1. Identify and articulate objects</div>
+<div class="box2 sb6">2.	Create an inclusive environment</div>
+<div class="box1 sb7"> 3.	Plan by asking the right questions</div>
+<div class="box2 sb8">4.	Provide direction and maintain focus</div>
+<div class="box1 sb9">5.	Bring closure</div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <div class="box"> 
+<h2>
+  Facilitator’s Role; Emotional Factors
+</h2>
+
+<div class="box1 sb5">1.	Know the strengths and weaknesses of the members</div>
+<div class="box2 sb6">2.	Develop sense of fun towards achieving the purpose</div>
+<div class="box1 sb7"> 3.	Make everyone engaged</div>
+<div class="box2 sb8">4.	Be sensitive to group chemistry and feelings</div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <div class="box"> 
+    <h2>Formal Group Discussions</h2>
+    <p class="information1">Formal Group discussions are done in a more formal setting with a scheduled time and structure. For these times, being familiar with the conventions and strategies followed for specific interactions, whether they are meetings, debates, or panel discussions, is essential.
+    </p> 
+    <h2>The Parliamentary Procedures</h2>
+<p class="information2">1.	Call to order – a signal that the meeting is about to begin. 
+    <br>
+2.	Roll call of members present – an attendance sheet may be passed in place of this.
+<br>
+3.	Reading minutes of the last meeting – the minutes may be circulated beforehand for corrections, comments, and approval to save time. 
+<br>
+4.	Officers or committee reports – as needed or if part of the agenda.  
+
+</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <div class="divv2">
+      <img src="01emote3.png" class="emote3">
+          </div>
+          <div class="box"> 
+      <p class="information1">
+        <br>
+5.	Special orders – important business previously designated for consideration at the meeting.
+<br>
+6.	Unfinished business – matter/s that need to be decided on or resolved.
+<br>
+7.	New business – issues that are up for discussion.
+<br>
+8.	Announcements – reminders or matter that everyone needs to know.
+<br>
+9.	Adjournment – formal closing of the meeting </p>
+   
+      </p> 
+      <p class="information2">Speech is a process of sending and recieving spoken messages between people and it is often used by the Speakers as a form of communication to interact with their followers at different events.
+        <br>
+        Speech can not always be done by using our mouth only, it can also be done by using non-verbal or actions to further demonstrate, explain and givee meaning to the audience.
+      </p>
+      <div class="button"><a href="STQ4.html" class="gotoquiz">take a quiz</a></div>
+  </div>
+    <div class="text"></div>
+  </div>
+
+   
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+
+<script>
+function dropdown() {
+    var x = document.getElementById("deown");
+    if (x.style.display == "block"){
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+}
+
+
+function drop1() {
+  var x = document.getElementById("infro");
+  if (x.style.display == "block"){
+      x.style.display = "none";
+  }
+  else {
+      x.style.display = "block";
+  }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

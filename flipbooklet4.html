@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'Qaroxe-zrllw';
+    src: url(Qaroxe-zrllw.ttf);
+  }
+  body {
+  font-family: 'Qaroxe-zrllw';
+    background-color:#0072bb;
+    background-image: url(littlelogos.png);
+    background-position: center;
+    
+    }
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.headerr{
+    width: 150px;
+    height: 50px;
+    margin-right: 250px;
+}
+
+.info{
+    color: #0e90e1;
+    margin-left: -290px;
+    font-size:15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.info:hover{
+    color: rgb(31, 169, 255);
+}
+
+.box{
+    background:  #fef200;
+    background-image: url(littlelogos4.png);
+    background-size: 900px;
+    background-position: center;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border:15px solid #00276C;
+    width: 80%;
+    height: fit-content;
+	margin: auto;
+    border-radius: 20px;
+    margin-top: 55px;
+}
+
+.information1{
+    background-color: #fffd74;
+    color: #2281ed;
+    font-size: 18px;
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.information1{
+    background-color: #fffd74;
+    color: #2281ed;
+    font-size: 18px;
+    font-family: 'Qaroxe-zrllw';
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    text-align: center;
+    padding: 25px;
+    border: solid 3px darkblue;
+}
+
+.information2 {
+    background-color: #fffd74;
+    color: #2281ed;
+    font-size: 18px;
+    width: 450px;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid 3px #00276C;
+}
+
+
+#newinfo{
+    animation: 8s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    height: 250px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {
+        visibility: visible;
+    opacity: 1;}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}           
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(8, 255, 251, 0.8);
+}
+
+.text {
+  color: #2513e8;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #10339d;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.button{
+    background-color: #0da2ff;
+    width: fit-content;
+    border-radius: 5px;
+    height: fit-content;
+    margin-left: 130px;
+ 
+}
+.button:hover, a:hover {
+    background-color: #002a9d;
+    color: #20aaff;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #f6ff50;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.pcs{
+    width: 225px;
+    height: 225px;
+    position: absolute;
+    z-index: 2;
+}
+
+.pic1{
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+}
+
+
+.figure {
+        position: relative;
+        width: 90px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+        align-items: center;
+        margin-left: 250px;
+        margin-top: 50px;
+      }
+      td{
+        padding: 3px 30px;
+        height: 30px;
+        width: 140px;
+        border-radius: 25px;  
+        background-color: #ffdf2b;
+        
+      }
+      .figure #hovee .Sirv.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .0s;
+
+      }
+
+
+      #hovee:hover .Sirv.image-hover {
+        padding: 3px 30px;
+        height: 50px;
+        width: 88px;
+        border-radius: 25px; 
+        margin-top: 4px;
+        margin-left: 3px;
+        opacity: 1;
+        background-color: #0fc5f2;
+      }
+
+      td{
+        border: #16286a solid 3px;
+        font-family: 'Qaroxe-zrllw';
+      }
+      .btn a{
+        color: #10156e;
+        text-decoration: none;
+        display: block;
+        padding:5px 10px;
+      }
+       .active,.btn:hover, .btn a:hover{
+        background-color: #0fc5f2;
+        color: rgb(255, 220, 79);
+        cursor: pointer;
+      }
+
+</style>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@lates/dist/boxicons.js"></script>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+  <div class="figure">
+    <table>
+    <td id="hovee"><box-icon name='home-alt-2' class="Sirv image-main" color="#63bbf3"></box-icon>
+   <a href="Index.html"><box-icon name='home-alt-2' type="solid" animation='tada' rotate='180' class="Sirv image-hover" color="yellow"></box-icon></a>
+</td>
+<td class="btn"> <a href="flipbooklet.html">1</a></th>
+<td class="btn"><a href="flipbooklet4.html">2</a></td>
+<td class="btn active"><a href="flipbooklet3.html">3</a></td>
+<td class="btn " ><a href="flipbooklet2.html">4</a></td>
+</table>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <div class="pcs">
+            <img src="01emote.png" alt="" class="pic1"> 
+          </div>
+  <div class="box"> 
+    
+    <image src="011speech.png" alt="speech" class="headerr">
+        <div class="information1"><h1>TWO ROLES: FACILITATORS AND PARTICIPANTS</h1>
+          <h3>Facilitator’s role: This is a role when a person would be focused and straight to the point during the group discussion. Without being focused, the participants might not want to be focused as well and listen to the facilitator and not even contribute to the group.</h3>
+          </div>
+          
+          
+        <div class = "information10" id="deown">
+              
+ 
+
+   
+
+            
+
+</div> 
+
+    <div class="information2"  id="newinfo"> 
+      <h5>There are 3 factors for the Facilitator’s role for them to achieve a good group discussions: Cognitive, Social/Emotional and Physical.</h5>
+</div>  
+</div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <div class="pcs">
+    <img src="01emote2.png" alt="" class="pic1"> 
+  </div>
+  <div class="box"> 
+    
+    <div class="information1">
+        <h4>First factor: Cognitive</h4>
+      <h6>-	It has 5 sub factors for the Cognitive that should be achieved for the role to be successful
+      </h6>
+      <p> 1.	Identify and Articulate Objectives: Make sure that all members understand the goals of the group so that they are going to be willing to contribute to the group.
+          <br>
+          2.	Create an Inclusive Environment: Respect is a must. Respect all the members verbally or non-verbally. Do not exclude other members who wants to share their thoughts and do not let the others disrespect each other.
+          
+    </div>
+    <div class="information2">
+      <br>
+          3.	Plan by Asking the Right Questions: Ask something that’s connected to the topic for better discussions and to make the group more interactive.
+          <br>
+          4.	Provide Direction and Maintain Focus: Focus is also a must during a discussion. You must guide the group when they are not paying attention. Do not let them lose focus.
+          <br>
+          5.	Bring Closure: Keep the track. Tracking your goal for your team is very important, it allows you and your team to see what you are heading to, especially your goals.
+          </p>
+    </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <div class="pcs">
+    <img src="Emote5.png" alt="" class="pic1"> 
+  </div>
+  <div class="box"> 
+    <div class="information1">
+      <h4>Second Factor: Social/Emotional</h4>
+        <p>-	This is a factor where a leader must know how to feel their members emotionally and socially. The strength and weaknesses of the members should be known by the leader to make sure not to overwork the members, the work distribution must be just and at ease so that the members would not have much of pressure. Add humors if you can to make sure that everyone is engaged.
+        </p> 
+        </div> 
+    <div class="information2"> <h4>Last Factor: Physical</h4>
+      <p>-	The group should not be exceeded by more than 8 members inside a group. Choose an arrangement where they can see and hear everyone in the group. Make sure that everything is comfortable so that it will not distract your members.
+      </p>
+</div>
+</div>
+</div>
+
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <div class="pcs">
+        <img src="01emote3.png" alt="" class="pic1"> 
+      </div>
+    <div class="box"> 
+      <div class="information1">    
+        <h2>Participant’s Role: As a participant, you should support your leader and make their job easier by participating properly since you are the most important part of the group to make the discussion fruitful and good.
+        </h2>
+
+      </div> 
+      <p class="information2">Speech is a process of sending and recieving spoken messages between people and it is often used by the Speakers as a form of communication to interact with their followers at different events.
+      </p>
+  </div>
+    <div class="text"></div>
+  </div>
+<div class="mySlides fade">  
+    <div class="numbertext">5 / 9</div>
+    <div class="pcs">
+        <img src="01emote2.png" alt="" class="pic1"> 
+      </div>
+    <div class="box">  
+        <div class="information1">
+<h4>Parliamentary Procedure:</h4>
+        <p>-	Call to Order: Starting point of the meeting
+         <br>   -	Roll Call of Members Present: Attendance
+          <br>  -	Reading Minutes of the Last Meeting: Detailed report of the past meeting
+          <br>  -	Officers and Committee Reports: If needed or part of the agenda 
+         <br>   -	Unfinished Business: Things that needs to be decided on or resolved
+           <br> -	New Business: Problems that can be us for a discussion
+           <br> -	Announcements: A reminder for the members or if something that is needed to know
+           <br> -	Adjournment: Ending</p>
+        </div>    </div>
+  </div> 
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <div class="pcs">
+        <img src="01ajemote.png" alt="" class="pic1"> 
+      </div>
+    <div class="box">
+        <div class="information1">
+            <h3>
+                In speech, there are three tools
+                </h3>
+                <h2>
+                    Ethos -</h2>
+                    <p> A Greek word meaning "character". It means getting your audience to trust you
+                    </p>
+                    <h2>
+                        Pathos - </h2>
+                        <p>A Greek word meaning "suffering and experience". It means getting to appeal to your audience emotionally
+                        </p>
+                        <h2>
+                            Logos - </h2>
+                            <p>A Greek word meaning "Thought, Word, and Speech". It means Appealing to your audience using logical arguments
+                            </p>
+        
+                    <div class="box1 sb5">
+                    (Honestly, apart from logos, these are some pretty cool Greek Mythology levels of names, but what can I expect? they originated from Greece)
+                    There are several types of speech in terms of delivery.)
+                    </div>
+        </div>
+    </div>
+  </div>
+  
+<div class="mySlides fade">
+    <div class="numbertext">7 /9
+    </div>
+    <div class="pcs">
+        <img src="01ajemote.png" alt="" class="pic1"> 
+      </div>
+    <div class="box">
+        <div class="information1">
+            <H2>
+                Reading from manuscript</H2>
+            <P>
+                - Reading and reciting your speech off of a script </P>
+                <div class="box1 sb5">
+                    (The name's self explanatory. Don't know why an explanation is needed)
+                </div>
+      
+                <H2>
+                    Memorized speech</H2>
+                <P>
+                    - You recite your speech off of what you've memorized in your noggin.</P>
+                      <div class="box1 sb5"> (Even If I did memorize something, I'd probably just forget it the last second)
+                    </div>
+                    <h2>
+                        Impromptu speaking</h2>
+                        <p>
+                            - Giving a speech without any preparation. </p>
+                            <div class="box1 sb5"> (This is even worse than memorized speech)
+                    </div>
+        </div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <div class="pcs">
+        <img src="01emote2.png" alt="" class="pic1"> 
+      </div>
+    <div class="box">
+    <div class="information1">
+        <h2>
+            Extemporaneous speaking</h2>
+              <p>
+
+    - A type of speech where you talk without memorization and notes.  </p>
+      <div class="box1 sb5"> (This is probably the most impersonal way to speak, almost similar to improm)
+      </div>
+      <p>
+        Speech is communication, and communication is a must. </p>
+        <div class="box1 sb5"> 
+            (And I wonder how the world would thrive without it)</div>
+
+    </div></div>
+</div>
+
+  
+           <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <div class="pcs">
+        <img src="01emote2.png" alt="" class="pic1"> 
+      </div>
+    <div class="box"> 
+      <div class="information1">
+<h2>Define - </h2>
+           <p>
+           Describing a meaning of something
+           </p>
+           <h2>
+               Report - </h2>
+               <p>
+       
+                   describing what someone is conveying without quotation marks
+                   </p>
+               <h2>
+       
+                   Describe - </h2>
+                   <p> To explain in detail about something
+                   </p>
+                   <h2>Explain - </h2>
+               <p>
+               Making something clear enough for someone to understand
+               </p>
+    </div> 
+      <div class="information2">
+        
+           
+       
+           
+               <h2>
+               Demonstrate - </h2>
+               <p>to show something in detail through actions
+               </p>
+               <h2>
+             Compare - </h2>
+             <p>To show the similarity or dissimilarities of something or someone
+             </p>
+             <div class="box1 sb5">
+             (But not that this is mandatory to keep in mind anyway since you pretty much subconsciously do these anyway when talking.)
+             </div>
+                      
+                  </div>
+      <div class="button"><a href="STQ3.html" class="gotoquiz">take a quiz</a></div>
+    </div>
+  </div>
+   
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+
+<script>
+function dropdown() {
+    var x = document.getElementById("deown");
+    if (x.style.display == "block"){
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
