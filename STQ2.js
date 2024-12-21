@@ -301,8 +301,8 @@ document.getElementById("an3").disabled = true;
 
 
 setTimeout(function(){
-    alert("This is wrong answer");
-}, 1000)
+    alert("It is used in Official meetings to be proffessional and ethical");
+}, 500)
 }
 
 wa3.onclick = function(){
@@ -325,7 +325,7 @@ document.getElementById("an3").disabled = true;
 
 setTimeout(function(){
     alert("Another wrong answer");
-}, 1000)
+}, 500)
 }
 
 wa5.onclick = function(){
@@ -347,8 +347,8 @@ if(true){
 }
 
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("A facilitator should be able to give direction and control in the discussion");
+}, 500)
 }
 
 wa6.onclick = function(){
@@ -373,7 +373,7 @@ if(true){
 
 setTimeout(function(){
     alert("Another wrong answer");
-}, 1000)
+}, 500)
 }
 
 wa9.onclick = function(){
@@ -396,8 +396,8 @@ if(true){
 }
 
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("To make a message that is effective to the audience");
+}, 500)
 }
 
 wa10.onclick = function(){
@@ -420,8 +420,8 @@ if(true){
 }
 
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("To make a message that is effective to the audience");
+}, 500)
 }
 
 wa11.onclick = function(){
@@ -442,8 +442,8 @@ if(true){
     document.getElementById("nxt4").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("There are five levels of speaking styles such as intimate, casual, formal, frozen, and consultative");
+}, 500)
 }
 
 wa12.onclick = function(){
@@ -466,8 +466,8 @@ if(true){
 }
 
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("There are five levels of speaking styles such as intimate, casual, formal, frozen, and consultative");
+}, 500)
 }
 
 wa13.onclick = function(){
@@ -488,8 +488,8 @@ if(true){
     document.getElementById("nxt5").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Casual language is often used when conversing with our peers and friends because we are often not in a work environment nor is there a power dynamic");
+}, 500)
 }
 
 wa15.onclick = function(){
@@ -509,8 +509,8 @@ if(true){
     document.getElementById("nxt5").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Casual language is often used when conversing with our peers and friends because we are often not in a work environment nor is there a power dynamic");
+}, 500)
 }
 
 
@@ -533,8 +533,8 @@ if(true){
     document.getElementById("nxt6").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is a language shared beween close friends or more to establish the closeness between two people");
+}, 500)
 }
 
 wa22.onclick = function(){
@@ -554,8 +554,8 @@ if(true){
     document.getElementById("nxt6").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is a language shared beween close friends or more to establish the closeness between two people");
+}, 500)
 }
 
 wa23.onclick = function(){
@@ -574,8 +574,8 @@ if(true){
     document.getElementById("nxt7").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Formal and Frozen are formal while casual and consultative fall under the informal speech style");
+}, 500)
 }
 
 wa24.onclick = function(){
@@ -594,8 +594,8 @@ if(true){
     document.getElementById("nxt7").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Formal and Frozen are formal while casual and consultative fall under the informal speech style");
+}, 500)
 }
 
 wa25.onclick = function(){
@@ -615,8 +615,8 @@ if(true){
 
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is static because the examples under the frozen language style are hymns, vision and mission, and poems");
+}, 500)
 }
 
 wa26.onclick = function(){
@@ -636,8 +636,8 @@ if(true){
     document.getElementById("nxt8").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is static because the examples under the frozen language style are hymns, vision and mission, and poems");
+}, 500)
 }
 
 
@@ -660,8 +660,8 @@ if(true){
     document.getElementById("nxt9").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is consultative because you are consulting your teacher and asking for directions");
+}, 500)
 }
 
 
@@ -682,8 +682,8 @@ if(true){
     document.getElementById("nxt9").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("It is consultative because you are consulting your teacher and asking for directions");
+}, 500)
 }
 
 wa29.onclick = function(){
@@ -703,8 +703,8 @@ if(true){
     document.getElementById("nxt10").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Language register is the answer because it is how you measure the degrees of formalityr");
+}, 500)
 }
 
 wa30.onclick = function(){  
@@ -724,8 +724,8 @@ if(true){
     document.getElementById("nxt10").disabled = false;
 }
 setTimeout(function(){
-    alert("Another wrong answer");
-}, 1000)
+    alert("Language register is the answer because it is how you measure the degrees of formality");
+}, 500)
 }
 
 

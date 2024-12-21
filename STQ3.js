@@ -300,8 +300,8 @@ wa2.onclick = function(){
 
    
     setTimeout(function(){
-        alert("This is wrong answer");
-    }, 1000)
+        alert("It is faciliator and participant");
+    }, 500)
 }
 
 wa3.onclick = function(){
@@ -323,8 +323,8 @@ wa3.onclick = function(){
 
    
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("It is faciliator and participant");
+    }, 500)
 }
 
 wa5.onclick = function(){
@@ -347,8 +347,8 @@ wa5.onclick = function(){
     }
 
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("they should be able to provider");
+    }, 500)
 }
 
 wa6.onclick = function(){
@@ -373,8 +373,8 @@ wa6.onclick = function(){
     }
 
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("they should be able to provider");
+    }, 500)
 }
 
 wa9.onclick = function(){
@@ -397,8 +397,8 @@ wa9.onclick = function(){
     }
 
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Identifying and articukating is the first cognitive factor");
+    }, 500)
 }
 
 wa10.onclick = function(){
@@ -421,8 +421,8 @@ wa10.onclick = function(){
     }
 
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Identifying and articukating is the first cognitive factor");
+    }, 500)
 }
 
 wa11.onclick = function(){
@@ -443,8 +443,8 @@ wa11.onclick = function(){
         document.getElementById("nxt4").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert(" Creating an inclusive enviornment to align with the members' preferences");
+    }, 500)
 }
 
 wa12.onclick = function(){
@@ -467,8 +467,8 @@ wa12.onclick = function(){
     }
 
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert(" Creating an inclusive enviornment to align with the members' preferences");
+    }, 500)
 }
 
 wa13.onclick = function(){
@@ -489,8 +489,8 @@ wa13.onclick = function(){
         document.getElementById("nxt5").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Starting the meeting is the purpose to the call to order");
+    }, 500)
 }
 
 wa15.onclick = function(){
@@ -510,8 +510,8 @@ wa15.onclick = function(){
         document.getElementById("nxt5").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Starting the meeting is the purpose to the call to order");
+    }, 500)
 }
 
 
@@ -534,8 +534,8 @@ wa21.onclick = function(){
         document.getElementById("nxt6").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("8 members is reccommended because it is the right amount");
+    }, 500)
 }
 
 wa22.onclick = function(){
@@ -555,8 +555,8 @@ wa22.onclick = function(){
         document.getElementById("nxt6").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("8 members is reccommended because it is the right amount");
+    }, 500)
 }
 
 wa23.onclick = function(){
@@ -575,8 +575,8 @@ wa23.onclick = function(){
         document.getElementById("nxt7").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert(" To help members be active and participate in the dicussion");
+    }, 500)
 }
 
 wa24.onclick = function(){
@@ -595,8 +595,8 @@ wa24.onclick = function(){
         document.getElementById("nxt7").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert(" To help members be active and participate in the dicussion");
+    }, 500)
 }
 
 wa25.onclick = function(){
@@ -611,8 +611,8 @@ wa25.onclick = function(){
         document.getElementById("nxt7").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("So that way you can become more confident");
+    }, 500)
 }
 
 wa26.onclick = function(){
@@ -620,12 +620,15 @@ wa26.onclick = function(){
         document.getElementById("an22").style.backgroundColor = "red";
         document.getElementById("an24").style.backgroundColor = "red";
         document.getElementById("an23").style.backgroundColor = "#00ff00";
-        
+          
+        document.getElementById("an22").style.cursor = "not-allowed";
+        document.getElementById("an23").style.cursor = "not-allowed";
+        document.getElementById("an24").style.cursor = "not-allowed";
         document.getElementById("nxt8").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("it is important to engange your audience to let them be more active ");
+    }, 500)
 }
 
 
@@ -635,11 +638,14 @@ wa27.onclick = function(){
         document.getElementById("an24").style.backgroundColor = "red";
         document.getElementById("an23").style.backgroundColor = "#00ff00";
         
+        document.getElementById("an22").style.cursor = "not-allowed";
+        document.getElementById("an23").style.cursor = "not-allowed";
+        document.getElementById("an24").style.cursor = "not-allowed";
         document.getElementById("nxt8").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("it is important to engange your audience to let them be more active ");
+    }, 500)
 }
 
 
@@ -655,8 +661,8 @@ wa28.onclick = function(){
         document.getElementById("nxt9").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("So that way you can become more confident");
+    }, 500)
 }
 
 wa29.onclick = function(){
@@ -676,8 +682,8 @@ wa29.onclick = function(){
         document.getElementById("nxt10").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Speaking about unrelated contents could lead to audience misunderstaing you as the speaker  so always speak the truth");
+    }, 500)
 }
 
 wa30.onclick = function(){  
@@ -697,8 +703,8 @@ wa30.onclick = function(){
         document.getElementById("nxt10").disabled = false;
     }
     setTimeout(function(){
-        alert("Another wrong answer");
-    }, 1000)
+        alert("Speaking about unrelated contents could lead to audience misunderstaing you as the speaker so always speak the truth");
+    }, 500)
 }
 
 
